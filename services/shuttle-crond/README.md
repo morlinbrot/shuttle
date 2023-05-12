@@ -45,3 +45,23 @@ that communicates with the main `CronRunner` via
 - [ ] Let user pass their own route, combine the two
 - [ ] Make name of `set-schedule` router configurable
 - [ ] Use builder pattern for setting up and configuring the service
+
+# Meeting notes
+
+- Move what we have to shuttle-examples and rename, merge there.
+
+- shuttle-crond could/should be a community maintained service
+- "demon as a service"
+
+## Crond
+
+- Don't wrap around any framework
+- No injected shuttle resources b/c the runtime is limited
+
+## Future considerations
+
+- Consider how other workloads could be handled more generically, e.g. as
+  explained in issue X
+- Run Rust functions? Rust business logic
+- Run WASM modules?
+- Run containers?
